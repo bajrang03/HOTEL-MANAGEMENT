@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container col-md-6">
+    <h1 style="color: red;">User Login</h1>
+    <form (ngSubmit)="Login()">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">UserId</label> 
+            <input type="text" [(ngModel)]="user.userId" class="form-control" id="userId" name="userId">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Password</label> 
+            <input type="password" [(ngModel)]="user.password" class="form-control" id="password" name="password">
+        </div>
+        <button type="Submit" class="btn btn-primary">Login</button>
+        <a href="assign part7.html">Register</a>
+    </form>
+</div>
+</body>
+</html>
+
+
+
+ 
