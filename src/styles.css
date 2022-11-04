@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --transition: all 0.7s ease;
+    --yellow: #f9d342;
+    --dark: #292826;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    line-height: 1.6;
+}
+.btn{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 140px;
+    display: block;
+    margin: 15px auto;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn:hover{
+    opacity: 0.85;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 8px 0;
+}
+img{
+    width: 100%;
+    display: block;
+}
+@media(max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+}
+.testimonial .owl-prev, .testimonial .owl-next{
+    position: absolute!important;
+    background: #ffffff24!important;
+    width: 64px!important;
+    height: 64px!important;
+    border-radius: 50%!important;
+    z-index: 2!important;
+    font-size: 24px!important;
+    color: #111!important;
+    transition: all .3s ease!important;
+    top: 50%!important;
+    transform: translate(-50%, -50%)!important;
+}
+.testimonial .owl-prev{
+    left: 114px!important;
+}
+.testimonial .owl-next{
+    right: 48px!important;
+}
+.testimonial .owl-prev i, .testimonial .owl-next i{
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    transform: translate(-50%, -50%)!important;
+}
+.testimonial .owl-prev:hover, .testimonial .owl-next:hover{
+    background: #ff4000!important;
+    color: #fff!important;
+}
+
