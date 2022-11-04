@@ -1,0 +1,71 @@
+<header>
+    <div class="con">
+      <div class="row">
+        <div class="col-md-1"></div>
+          <div class="language">
+            <ul>
+                <li (click)="drop('language')">
+                    Account <i class="fa fa-caret-down"></i>
+                    <div class="dropdown" *ngIf="id == 'language'">
+                        <ul>
+                            <li>
+                                Profile
+                            </li>
+                            <li>
+                                Rooms
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li (click)="drop('currency')">
+                 About <i class="fa fa-caret-down"></i>
+                    <div class="dropdown" *ngIf="id == 'currency'">
+                        <ul>
+                            <li>
+                                USD
+                            </li>
+                            <li>
+                                EURO
+                            </li>
+                            <li>
+                                USD
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        <div class="col-md-11 text-right">
+            <div class="socialicon">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="login">
+                           Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+</header>
